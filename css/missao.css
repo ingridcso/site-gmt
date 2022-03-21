@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    padding: 60px 150px;
+    padding: 50px 150px;
 }
 .conteiner-missao h1 {
     font-size: 45px;
@@ -26,13 +26,14 @@
     .conteiner-missao {
     grid-template-columns: 1fr;
     gap: 10px;
-    padding: 10px 30px;
+    padding: 20px 30px;
     }
     .conteiner-missao h1 {
         font-size: 24px;
     }
     .lista-missao {
         padding-top: 10px;
+        padding-right: 50px;
     }
     .lista-missao li {
         font-size: 12px;
