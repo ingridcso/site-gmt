@@ -1,10 +1,12 @@
 .conteiner-planos{
     background-color: #F4ECF5;
     padding: 0px 150px;
+    position: relative;
 }
 .grid-planos {
     display: grid;
     gap: 10px;
+    padding-top: 100px;
 }
 .conteiner-planos h3{
     color: #B42790;
@@ -22,6 +24,8 @@
 .topo-planos {
     padding-top: 20px;
     padding-bottom: 20px;
+    position: absolute;
+    left: 50px;
 }
 .topo-planos img{
     height: 40px;
@@ -30,7 +34,7 @@
 .topo-planos h1 {
     color: #53215B;
     padding-left: 35px;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 .conteiner-diferencial {
     padding: 20px;
@@ -209,5 +213,64 @@
     }
     .planos h4 {
         font-size: 14px;
+        padding-top: 10px;
+    }
+    .topo-planos {
+        padding-top: 10px;
+        left: 50px;
+    }
+    .topo-planos img {
+        height: 20px;
+    }
+    .div-planos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+    .topo-planos h1 {
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    #slidefibra, #slidepos, #slidecontrole{
+        display: none;
+    }
+    .grid-planos {
+        gap: 10px;
+        padding-top: 50px;
+    }
+    .planos {
+        height: 300px;
+        width: 500px;
+        padding: 10px;
+    }
+    .bloco-1 {
+    padding: 10px 20px;
+    width: 150px;
+    height: 120px;
+    }
+    .bloco-1 img {
+        height: 30px;
+        width: 30px;
+    }
+    .divisao-vantagens {
+        gap: 20px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+    }
+    .bloco-1 p {
+        padding: 0px;
+        font-size: 12px;
+    }
+    .conteiner-diferencial {
+        border-radius: 50px;
+    }
+    .conteiner-diferencial img {
+        height: 50px;
+    }
+    .conteiner-diferencial p {
+        font-size: 12px;
+    }
+    .conteiner-diferencial h1 {
+        padding-bottom: 5px;
     }
 }
