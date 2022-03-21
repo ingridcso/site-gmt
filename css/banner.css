@@ -1,11 +1,18 @@
 .banner-celulares {
-    height: 300px;
     width: 1080px;
     background-size:100%;
-    padding: 10px 90px 20px 50px;
+}
+.banner-celulares h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #664DC4;
 }
 .banner-celulares div {
     color: #FFF;
+}
+.bolinhas {
+    padding-left: 400px;
+    padding-top: 10px;
 }
 .banner-celulares h3 {
     font-size: 16px;
@@ -15,7 +22,7 @@
     padding-left: 20px;
 }
 .botao-contato {
-    margin-top: 250px;
+    margin-top: 300px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
@@ -42,7 +49,7 @@
 }
 #slideprincipal {
     height: 300px;
-    width: 1080px;
+    width: 890px;
     max-height: 450px;
     position: relative;
 }
@@ -60,16 +67,13 @@
 .conteiner-consultor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.conteiner-consultor {
     background-image: url(../img/img-2.png);
     height: 400px;
 }
 .conteiner-consultor h1{
     color: #F4ECF5;
     font-size: 35px;
-    padding-left: 50px;
+    padding-left: 70px;
     padding-right: 50px;
     padding-top: 100px;
 }
@@ -79,6 +83,24 @@
     opacity: 1;
     animation:  pisca .7s infinite;
 }
+.promocoes {
+    background-color: #664DC4;
+    box-shadow: 0 0 5px #be74e5;
+    height: 100px;
+    width: 120px;
+    border-radius: 4px;
+}
+.promocoes p {
+    padding: 5px;
+}
+.conteiner-promocoes {
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 510px;
+}
 @keyframes pisca {
     0% {
         opacity: 1;
@@ -86,4 +108,43 @@
     50% {
         opacity: 0;
     }
+}
+@media (max-width: 800px) {
+    .conteiner-consultor {
+    grid-template-columns: 1fr;
+    height: 200px;
+}
+    .botao-contato {
+        margin: 30px ;
+    }
+    .conteiner-consultor h1 {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-top: 50px;
+}
+.descricao {
+    padding-left: 20px;
+}
+.banner-celulares h1 {
+    position: absolute;
+    top: -10px;
+    font-size: 20px;
+    padding-left: 50px;
+}
+#slideprincipal {
+    top: -490px;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    padding-left: 30px;
+}
+.topo-planos img {
+    height: 20px;
+}
+.bolinhas {
+    display: none;
+}
+.conteiner-promocoes {
+    display: none;
+}
 }
