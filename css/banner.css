@@ -5,7 +5,7 @@
 .banner-celulares h1 {
     padding-top: 40px;
     padding-bottom: 30px;
-    color: #664DC4;
+    color: #E32045;
 }
 .banner-celulares div {
     color: #FFF;
@@ -128,11 +128,11 @@
 .banner-celulares h1 {
     position: absolute;
     top: -10px;
-    font-size: 20px;
-    padding-left: 50px;
+    font-size: 30px;
+    padding-left: 30px;
 }
 #slideprincipal {
-    top: -490px;
+    top: -450px;
     height: 200px;
     width: 400px;
     position: relative;
@@ -146,5 +146,8 @@
 }
 .conteiner-promocoes {
     display: none;
+}
+.contato-consultor {
+    padding-bottom: 20px;
 }
 }
