@@ -3,7 +3,7 @@
     src: url("./officina_serif_os_itc_tt/OFFSFOB.ttf");
   }
   body {
-      width: 1300px;
+      max-width: 1300px;
   }
 body, ul , li, img, h1, h2, h3,h4, p,a {
     margin: 0px;
