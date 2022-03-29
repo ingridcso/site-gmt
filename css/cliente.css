@@ -49,6 +49,9 @@
     .area-cliente{ 
         padding: 10px 20px;
         display: grid;
+        width: 150px;
+        right: 0px;
+        margin-left: 440px;
     }
     .lista-cliente img {
         height: 30px;
