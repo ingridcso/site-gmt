@@ -10,20 +10,21 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0px 170px 30px 170px;
     gap: 30px;
-    color: #FFF;
+    color: #F4ECF5;
 }
 .menu-footer p{
     padding-top: 20px;
 }
 .menu-footer h3 {
     padding-bottom: 20px;
+    color: #F4ECF5;
 }
 .menu-footer li {
     padding-bottom: 10px;
 }
 .menu-footer a {
     text-decoration: none;
-    color: #FFF;
+    color: #F4ECF5;
 }
 .menu-footer a:hover {
     color: #F4ECF5;
@@ -41,7 +42,7 @@
 }
 @media (max-width: 800px) {
     .conteiner-footer img{
-        padding: 10px 10px;
+        padding: 20px;
         height: 30px;
     }
     .menu-footer{
