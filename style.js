@@ -20,12 +20,14 @@ $(document).ready(function() {
       });
       const btnMobile = document.getElementById('btn-mobile');
 
-function toggleMenu() {
+function toggleMenu(event) {
+  if(event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
     nav.classList.toggle('active');
 }
 
-btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 
 let time = 2000;
@@ -202,3 +204,25 @@ const debounce = function(func, wait, immediate) {
   const titulo = document.querySelector('.maquina');
   typeWrite(titulo);
   typeWrite(document.querySelector('.maquina-atendimento'));
+
+  // scroll suave
+
+  const menuItem = document.querySelector('#nossaslojas');
+
+  menuItem.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+  })
+
+    function scrollToIdOnClick(event) {
+      event.preventDefault();
+      const element = event.target;
+      const id = element.getAttribute('href');
+      const to = document.querySelector('#nossaslojas');
+
+      window.scroll({
+        top: to,
+        behavior:'smooth'
+      });
+  }
+
+  //
